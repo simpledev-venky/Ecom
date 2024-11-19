@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Ensures the images look good and fit within the card */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand h4" href="#">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"> <b>About</b> </a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+                <a href="register.html" class="btn btn-outline-light me-2">Register</a>
+                <div class="position-relative">
+                    <a href="cart.html" class="btn btn-outline-success">
+                        Cart
+                        <span id="cartCount" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- About Us Section -->
+    <div class="container my-5">
+        <h2 class="text-center">About Us</h2>
+        <hr>
+        <p class="text-center">We provide the best products for all your needs, including Men's Clothing, Women's Clothing, Jewellery, and Electronics. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nisi, eius commodi incidunt necessitatibus laboriosam perspiciatis eaque quaerat placeat qui nesciunt, culpa dolor quia labore amet voluptas eos odit non ipsum! Aliquam pariatur laborum alias earum est numquam mollitia. Unde pariatur quidem aspernatur quis vel natus aliquam molestias ad assumenda iste odio minima quod nemo, a quam molestiae? Ab alias ad iure, quidem aliquam nobis optio repellat commodi labore aut neque tempore modi ipsa praesentium dolores veniam debitis. Illo tenetur dolore, optio voluptate consequatur sed repellat laboriosam dolor ullam aliquid corrupti sapiente doloribus, corporis nobis excepturi, iste aliquam consectetur! Illo.</p>
+    </div>
+
+    <!-- Product Categories Section -->
+    <div class="container">
+        <h3 class="text-center mb-4">Our Products</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Men's Clothing -->
+            <div class="col">
+                <div class="card">
+                    <img src="./img/men's.jpg" class="card-img-top" alt="Men's Clothing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Men's Clothing</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Women's Clothing -->
+            <div class="col">
+                <div class="card">
+                    <img src="./img/womens.jpeg" class="card-img-top" alt="Women's Clothing">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Women's Clothing</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Jewellery -->
+            <div class="col">
+                <div class="card">
+                    <img src="./img/jw.jpeg" class="card-img-top" alt="Jewellery">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jewellery</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Electronics -->
+            <div class="col">
+                <div class="card">
+                    <img src="./img/elect.jpeg" class="card-img-top" alt="Electronics">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Electronics</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <h6>Made with Love by Wandel Rand</h6>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

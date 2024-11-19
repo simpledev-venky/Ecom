@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-item-image {
+    width: 100px; /* Set a fixed width for images */
+    height: auto;
+    object-fit: cover; /* Ensures images fit nicely */
+    border-radius: 5px;
+}
+
+.cart-item-details {
+    flex: 1; /* Ensures the details take up the remaining space */
+}
+
+.cart-item-controls {
+    margin-top: 10px;
+}
+
+.cart-item-controls button {
+    width: 30px; /* Keep buttons small and uniform */
+    text-align: center;
+}
+
+.cart-item .rm {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    width: 30%;
+}
+
+        .footer-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .footer-btn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand h4" href="#">E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+                    <a href="register.html" class="btn btn-outline-light me-2">Register</a>
+                    <div class="position-relative">
+                        <a href="cart.html" class="btn btn-outline-success">
+                            Cart
+                            <span id="cartCount" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Cart Page -->
+    <div class="container my-5">
+        <h4 id="cartStatus" class="text-center">Your Cart is Empty</h4>
+        <div class="text-center">
+            <a href="index.html">
+                <button id="continueShoppingBtn" class="btn btn-primary">Continue Shopping</button>
+            </a>
+        </div>
+
+        <!-- Cart Items Section -->
+        <div id="cartItems" class="mt-4"></div>
+
+        <!-- Order Summary -->
+        <div class="order-summary mt-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="orderSummary">
+                    <tr>
+                        <!-- <td colspan="3" class="text-center">No items in the cart</td> -->
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Order Summary</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="orderSummaryDetails">
+                    <tr>
+                        <td>Products</td>
+                        <td id="productCount">0</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td id="totalPrice">$0</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Amount</strong></td>
+                        <td id="finalAmount"><strong>$30</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="footer-btn">Go to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <h6>Made with Love by Wandel Rand</h6>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for Cart Page -->
+    
+    <script src="main.js"></script>
+</body>
+</html>

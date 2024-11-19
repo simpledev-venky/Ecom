@@ -1,0 +1,25 @@
+#cartCount {
+    font-size: 0.75rem; /* Small badge size */
+    padding: 0.2em 0.4em; /* Compact padding */
+    border-radius: 50%; /* Make the badge circular */
+    min-width: 20px; /* Ensure it remains round */
+    text-align: center;
+    line-height: 1.2; /* Align text vertically */
+    color: white;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.navbar .btn-outline-success {
+    position: relative; /* Ensure the badge is positioned relative to the button */
+    padding-right: 2.5rem; /* Provide space for the badge */
+}
+
+.navbar .position-relative .badge {
+    top: -10%; /* Adjust the badge slightly upward */
+    start: 90%; /* Align it to the right corner of the button */
+    transform: translate(-50%, -50%); /* Center the badge precisely */
+}
+
+.d-flex {
+    gap: 1rem; /* Add spacing between login, register, and cart buttons */
+}
